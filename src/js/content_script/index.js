@@ -1,5 +1,4 @@
 import { browser } from "../config";
-import uniqid from "uniqid";
 const canvas = document.createElement("canvas");
 canvas.width = 16;
 canvas.height = 16;
@@ -20,7 +19,7 @@ async function setFavIcon(data){
     context.fillStyle = `rgba(${data.settings.color.r}, ${data.settings.color.g},  ${data.settings.color.b}, ${data.settings.color.a})`;
     context.fill();
     dataUrlBuf = canvas.toDataURL();
-    link.href=  dataUrlBuf;
+    link.href =  dataUrlBuf;
     document.head.appendChild(link); 
   });
   img.src = data.dataUrl;
@@ -28,8 +27,8 @@ async function setFavIcon(data){
 
 }
 const observer = new MutationObserver((mutations) => {
+  if(!dataUrlBuf) return;
     for(const mut of mutations){
-      //if(mut.addedNodes[0] && mut.addedNodes[0].nodeName !== "LINK") continue;
       if( Array.from(mut.addedNodes).includes(link) ||  Array.from(mut.removedNodes).includes(link) ){
       }else{
         if(link.parentNode ==document.head ){
@@ -46,7 +45,6 @@ async function setOriginal()
 {
   if(!orignalFavIcon) return;
   observer.disconnect();
-  //document.head.removeChild(link);
   link.href = orignalFavIcon;
 }
 browser.runtime.onMessage.addListener(({event, data}) => {

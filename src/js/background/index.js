@@ -27,9 +27,7 @@ async function getSettings()
 async function updateSettings(newData)
 {
     const settings = await getSettings();
-    console.log(newData)
     settings[newData.name] = newData.value;
-    console.log(settings)
     browser.storage.local.set({settings});
     return settings;
 }

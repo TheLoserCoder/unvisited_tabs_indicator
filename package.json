@@ -1,7 +1,7 @@
 {
   "name": "unvisited_tabs",
   "version": "1.0.0",
-  "description": "",
+  "description": "Extention to indicate unvisited tabs",
   "scripts": {
     "dev": "webpack --env dev",
     "prod-f": "webpack --env prod --env browser=firefox",

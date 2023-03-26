@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from "react";
+import React from "react";
 
 import { Slider, Grid } from "@material-ui/core";
 import { makeStyles } from "@mui/styles";
@@ -17,7 +17,6 @@ export function Range(props)
       props.onChange(e)
     }
   }
-    const classes = useStyles();
     return(
         <Grid container direction="row" alignItems="center" justifyContent="space-between">
             <Grid item>

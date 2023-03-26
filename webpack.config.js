@@ -33,6 +33,10 @@ module.exports = (env) => {
             {
               from:`./src/html/popup.html`,
               to: `${output_path}/popup.html`
+            },
+            {
+              from:`./src/icon/icon.png`,
+              to: `${output_path}/icon.png`
             }
           ]
         }),
