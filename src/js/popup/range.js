@@ -1,13 +1,5 @@
 import React from "react";
-
 import { Slider, Grid } from "@material-ui/core";
-import { makeStyles } from "@mui/styles";
-
-const useStyles = makeStyles({
-  root: {
-    justifyContent: "space-between",
-  },
-});
 
 
 export function Range(props)
