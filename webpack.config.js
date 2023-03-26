@@ -13,7 +13,7 @@ module.exports = (env) => {
   }else{
     options.mode = "production";
   };
-  const manifest_entry = env.dev ? "manifest.dev.json" : env.browser = "firefox" ? "manifest.firefox.json" : "manifest.chrome.json";
+    const manifest_entry = env.dev ? "manifest.dev.json" : env.browser = "firefox" ? "manifest.firefox.json" : "manifest.chrome.json";
   return [
     //background
     {

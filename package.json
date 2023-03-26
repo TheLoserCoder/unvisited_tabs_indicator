@@ -16,13 +16,9 @@
     "@mui/icons-material": "^5.11.9",
     "@mui/material": "^5.11.10",
     "@mui/styles": "^5.11.9",
-    "dexie": "^3.2.3",
-    "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-color": "^2.19.3",
-    "react-dom": "^18.2.0",
-    "tinycolor2": "^1.6.0",
-    "uniqid": "^5.4.0"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
@@ -32,9 +28,6 @@
     "babel-loader": "^9.1.2",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^5.2.6",
-    "disable-output-webpack-plugin": "^1.0.1",
-    "file-loader": "^6.2.0",
-    "json-loader": "^0.5.7",
     "webpack": "^5.75.0",
     "webpack-cli": "^4.7.2"
   }

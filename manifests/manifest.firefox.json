@@ -20,7 +20,7 @@
         }
       },
     "browser_action": {
-      "default_title": "Unvisited tabs",  
+      "default_title": "Unvisited tabs indicator",  
       "default_popup": "popup.html",
       "default_icon":{
         "16": "icon.png",
