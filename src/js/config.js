@@ -1,0 +1,1 @@
+export const browser = chrome || browser;
